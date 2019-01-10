@@ -28,4 +28,18 @@ conda env create --name ctsm --file environment.yml
 # tell conda to ask for permission to install new packages
 conda config --set always_yes no
 
+# activate the ctsm environment
+conda activate ctsm
+
+# Setup notebook password
+echo "Setting up you password for Jupyter Notebooks, enter something you will remember"
+jupyter notebook password
+
+# deactivate the ctsm environment
+conda deactivate
+
 echo "Done setting up your environment"
+echo ""
+echo "You can activate this environment using the following command:"
+echo ""
+echo "conda activate ctsm"
